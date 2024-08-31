@@ -2,6 +2,7 @@ package org.example.customer;
 
 import jakarta.annotation.PostConstruct;
 import org.example.contract.Food;
+import org.example.custom.LastFavourit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
@@ -11,6 +12,7 @@ public class Mahesh {
 
     @Autowired
     @Qualifier("chickenRoll")
+    @LastFavourit
     private Food food;
 
     public void setFood(Food food){
